@@ -2,6 +2,8 @@
 
 Welcome to **CraveCourie**, a modern and sophisticated food delivery website that brings gourmet meals and personalized comfort food straight to your door in Hubballi! 🍽️
 
+live demo : https://cravecourier-website.netlify.app/
+
 ## About CraveCourie
 
 CraveCourie is more than just a food delivery service - we deliver your dream meal. Our platform allows customers to order custom dishes online and get exactly what they're craving, made fresh and brought to their door. From gourmet meals to personalized comfort food, we're the top choice for food delivery in Hubballi.
@@ -138,3 +140,4 @@ This project was created by **Alhan Bellary**. Feel free to fork and modify for 
 ## License
 
 All rights reserved. Created with ❤️ for the food delivery community.
+
