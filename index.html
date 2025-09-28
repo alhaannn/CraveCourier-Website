@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tasty Bites</title>
+    <title>CraveCourie</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
@@ -13,7 +13,7 @@
 
 <body>
     <header>
-        <a href="#" class="logo"><i class="fas fa-utensils"></i>food</a>
+        <a href="#" class="logo"><img src="images/cravecourie-logo.svg" alt="CraveCourie Logo" class="logo-img">CraveCourie</a>
 
         <div id="menu-bar" class="fas fa-bars"></div>
 
@@ -21,20 +21,27 @@
             <a href="/">home</a>
             <a href="#speciality">our's special</a>
             <a href="#popular">popular foods</a>
-            <a href="#gallery">gallery</a>
             <a href="#review">customer reviews</a>
-            <a href="#order"><button class="btn0">Order Now</button></a>
+            <a href="#order"><button class="btn0">Custom Order</button></a>
         </nav>
+        
+        <!-- Login/Register Button -->
+        <div class="login-btn" id="login-btn" onclick="toggleLoginModal()">
+            <i class="fas fa-user"></i>
+            <span id="user-status">Login</span>
+        </div>
+        
+        <!-- Cart Icon -->
+        <div class="cart-icon" id="cart-icon" onclick="toggleCart()">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="cart-count" id="cart-count">0</span>
+        </div>
     </header>
     <section class="home" id="home">
         <div class="content">
-            <h3>Tasty Bites</h3>
-            <p>Welcome to Tasty Bites, where every meal is a culinary masterpiece delivered straight to your door.
-                Explore a world of flavors with our diverse menu, curated from the finest ingredients and prepared by
-                top chefs. Whether you're craving gourmet cuisine, comforting classics, or exotic dishes, SavorDelight
-                promises a dining experience that's always fresh, delicious, and convenient. Order now and indulge in
-                the delight of exceptional food, made just for you. Bon appétit!</p>
-            <a href="/#order" class="btn">order now</a>
+            <h3>CraveCourie</h3>
+            <p>Tired of the same old takeout? CraveCourier delivers more than just food—we deliver your dream meal. <strong><span class="red-text">Order custom dishes online</span></strong> and get exactly what you're craving, made fresh and brought to your door. From <strong>gourmet meals</strong> to <strong>personalized comfort food</strong>, discover why we're the top choice for <strong>food delivery in HUBBALLI</strong>. Your next favorite meal is just a click away!</p>
+            <a href="/#popular" class="btn">Our Meals</a>
         </div>
 
         <div class="image">
@@ -53,11 +60,9 @@
                 <div class="content">
                     <img src="images/s-1.png" alt="">
                     <h3>tasty burger</h3>
-                    <p><span>in our Tasty Burger, a perfect blend of succulent, premium beef, fresh, crisp vegetables,
-                            and our signature sauce, all nestled in a perfectly toasted bun. Each bite promises a burst
-                            of
-                            mouthwatering flavors that will leave you craving more. Experience burger perfection
-                            today!</span> </p>
+                    <p><span>Ready for the perfect burger? The Tasty Burger at CraveCourier is your canvas.
+
+                        We start with a succulent premium beef patty, fresh vegetables, and our signature sauce. It's the ideal foundation for your dream meal. <span style="color:black;">Customize your burger with a note</span> and get the best gourmet burger delivery in Hubballi.</span> </p>
 
                 </div>
             </div>
@@ -66,10 +71,11 @@
                 <div class="content">
                     <img src="images/s-2.png" alt="">
                     <h3>tasty pizza</h3>
-                    <p><span>Savor our Tasty Pizza, crafted with a crispy, golden crust, rich tomato sauce, and the
-                            finest,
-                            freshest toppings. Melted cheese and a perfect blend of herbs make every slice a delightful
-                            experience. Enjoy a slice of pizza perfection!</span></p>
+                    <p><span>Want your pizza exactly how you like it? <strong><span>Our Tasty Pizza</span></strong> is the perfect base for your cravings.
+
+                        We start with a crispy, golden crust, a rich tomato sauce, and the freshest toppings, all finished with a perfect blend of melted cheese and herbs. But the best part is you can make it your own. <strong><span></span></strong>
+                        
+                        Customize your pizza with a note and get the best pizza delivery in Hubballi</span></p>
 
                 </div>
             </div>
@@ -78,10 +84,8 @@
                 <div class="content">
                     <img src="images/s-3.png" alt="">
                     <h3>cold ice-cream</h3>
-                    <p><span>Treat yourself to our Cold Ice Cream, a creamy, dreamy delight that melts in your mouth.
-                            Choose
-                            from a variety of rich, indulgent flavors, each crafted to perfection. Refreshingly cool and
-                            irresistibly smooth, it's the perfect treat for any time of day.</span></p>
+                    <p><span>Treat yourself to our Cold Ice Cream, a creamy, dreamy delight that melts in your mouth. <strong><span>Choose from a variety of rich, indulgent flavors</span></strong>, each crafted to perfection. Refreshingly cool and irresistibly smooth, it's the perfect treat for any time of day.</span></p>
+                            </span></p>
 
                 </div>
             </div>
@@ -90,10 +94,9 @@
                 <div class="content">
                     <img src="images/s-4.png" alt="">
                     <h3>cold drinks</h3>
-                    <p><span>Quench your thirst with our Cold Drinks, a refreshing selection of beverages that offer a
-                            burst of cool, invigorating flavors. Whether you prefer classic sodas, sparkling waters, or
-                            fruity refreshments, each sip is a delightful way to stay cool and refreshed. Enjoy the
-                            chill!</span></p>
+                    <p><span>Need the perfect drink to go with your meal? Our Cold Drinks selection is a burst of refreshing flavors, and it's ready to be made just for you.
+
+                        Whether you prefer a classic soda, sparkling water, or fruity refreshment, you can add a note to your order for any special requests. Get your favorite <strong><span></span>beverages delivered in Hubballi, exactly how you like them.</span></strong></span></p>
 
                 </div>
             </div>
@@ -102,10 +105,9 @@
                 <div class="content">
                     <img src="images/s-5.png" alt="">
                     <h3>tasty sweets</h3>
-                    <p><span>Delight in our Tasty Sweets, a heavenly assortment of desserts crafted to satisfy your
-                            sweet tooth. From decadent cakes and pastries to creamy puddings and confections, each treat
-                            is made with the finest ingredients for an indulgent experience. Enjoy the sweetness in
-                            every bite!</span></p>
+                    <p><span>Craving something sweet, made just for you? Our <strong><span></span>Tasty Sweets</span></strong> are the perfect end to any meal, with a delightful assortment of desserts.
+
+                        From rich cakes to creamy confections, each treat is crafted with the finest ingredients. You can also <strong><span></span>add a note to your order</span></strong> for any special requests, like "extra caramel" or "no nuts." Get your <strong><span></span>dessert delivery in Hubballi</span></strong> and satisfy your sweet tooth exactly how you want to.</span></p>
 
                 </div>
             </div>
@@ -114,10 +116,11 @@
                 <div class="content">
                     <img src="images/s-6.png" alt="">
                     <h3>tasty breakfast</h3>
-                    <p><span>Start your day right with our Tasty Breakfast, featuring a delicious array of morning
-                            favorites. From fluffy pancakes and golden waffles to hearty omelets and fresh fruit bowls,
-                            every dish is made to energize and satisfy. Enjoy a breakfast that's both delicious and
-                            nourishing!</span></p>
+                    <p><span>Craving a breakfast made just for you? Start your day right with our <strong><span></span>Tasty Breakfast menu</span></strong>.
+
+                        From fluffy pancakes to hearty omelets, we have all your morning favorites. The best part? You can <strong><span></span>add a note to your order</span></strong> to customize your meal.
+                        
+                        Get your breakfast delivered in Hubballi, exactly the way you like it.</span></p>
 
                 </div>
             </div>
@@ -131,7 +134,7 @@
         <div class="box-container">
 
             <div class="box">
-                <span class="price"> ₹150 - ₹450 </span>
+                <span class="price"> ₹300 </span>
                 <img src="images/p-1.jpg" alt="burger">
                 <h3>tasty burger</h3>
                 <div class="stars">
@@ -141,11 +144,11 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                 </div>
-                <a href="/#order" class="btn">order now</a>
+                <a href="#" class="btn" onclick="addToCart('tasty burger', 300, 'images/p-1.jpg')">add to cart</a>
             </div>
 
             <div class="box">
-                <span class="price"> ₹500 - ₹2100 </span>
+                <span class="price"> ₹1300 </span>
                 <img src="images/p-2.jpg" alt="cakes">
                 <h3>tasty cakes</h3>
                 <div class="stars">
@@ -155,11 +158,11 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                 </div>
-                <a href="/#order" class="btn">order now</a>
+                <a href="#" class="btn" onclick="addToCart('tasty cakes', 1300, 'images/p-2.jpg')">add to cart</a>
             </div>
 
             <div class="box">
-                <span class="price"> ₹50 - ₹400 </span>
+                <span class="price"> ₹225 </span>
                 <img src="images/p-3.jpg" alt="sweets">
                 <h3>tasty sweets</h3>
                 <div class="stars">
@@ -169,11 +172,11 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                 </div>
-                <a href="/#order" class="btn">order now</a>
+                <a href="#" class="btn" onclick="addToCart('tasty sweets', 225, 'images/p-3.jpg')">add to cart</a>
             </div>
 
             <div class="box">
-                <span class="price"> ₹30 - ₹600 </span>
+                <span class="price"> ₹315 </span>
                 <img src="images/p-4.jpg" alt="cupcakes">
                 <h3>tasty cupcakes</h3>
                 <div class="stars">
@@ -183,11 +186,11 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                 </div>
-                <a href="/#order" class="btn">order now</a>
+                <a href="#" class="btn" onclick="addToCart('tasty cupcakes', 315, 'images/p-4.jpg')">add to cart</a>
             </div>
 
             <div class="box">
-                <span class="price"> ₹40 - ₹120 </span>
+                <span class="price"> ₹80 </span>
                 <img src="images/p-5.jpg" alt="drinks">
                 <h3>cold drinks</h3>
                 <div class="stars">
@@ -197,11 +200,11 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                 </div>
-                <a href="/#order" class="btn">order now</a>
+                <a href="#" class="btn" onclick="addToCart('cold drinks', 80, 'images/p-5.jpg')">add to cart</a>
             </div>
 
             <div class="box">
-                <span class="price"> ₹35 - ₹380 </span>
+                <span class="price"> ₹207 </span>
                 <img src="images/p-6.jpg" alt="ice-cream">
                 <h3>tasty ice-creams</h3>
                 <div class="stars">
@@ -211,92 +214,7 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                 </div>
-                <a href="/#order" class="btn">order now</a>
-            </div>
-        </div>
-    </section>
-
-<!--     <section class="steps">
-
-        <div class="box">
-            <img src="images/step-1.jpg" alt="">
-            <h3>choose your favourite food</h3>
-        </div>
-        <div class="box">
-            <img src="images/step-2.jpg" alt="">
-            <h3>free and fast delivery</h3>
-        </div>
-        <div class="box">
-            <img src="images/step-3.jpg" alt="">
-            <h3>easy payment methods</h3>
-        </div>
-        <div class="box">
-            <img src="images/step-4.jpg" alt="">
-            <h3>and finally, enjoy your food</h3>
-        </div>
-    </section> -->
-
-    <section class="gallery" id="gallery">
-
-        <h1 class="heading">our food <span>gallery</span></h1>
-
-        <div class="box-container">
-
-            <div class="box">
-                <img src="images/g-1.jpg" alt="">
-                <div class="content">
-                    <h3>Tasty Burger</h3>
-                    <p>Absolutely delicious! The Tasty Burger was juicy and flavorful, easily the best burger I've had in a long time.</p>
-                    <a href="/#order" class="btn">order now</a>
-                </div>
-            </div>
-            <div class="box">
-                <img src="images/g-3.jpg" alt="">
-                <div class="content">
-                    <h3>tasty food</h3>
-                    <p>Breakfast here is amazing! The pancakes were fluffy, and the omelet was packed with fresh ingredients. A great way to start the day!</p>
-                    <a href="/#order" class="btn">order now</a>
-                </div>
-            </div>
-            <div class="box">
-                <img src="images/g-4.jpg" alt="">
-                <div class="content">
-                    <h3>TastyBites</h3>
-                    <p>The cupcakes from TastyBites are absolutely delightful! They're moist, flavorful, and beautifully decorated. Each bite is a little piece of heaven. I can't resist ordering them for every special occasion!"</p>
-                    <a href="/#order" class="btn">order now</a>
-                </div>
-            </div>
-            <div class="box">
-                <img src="images/g-5.jpg" alt="">
-                <div class="content">
-                    <h3>Tasty Sweets</h3>
-                    <p>The Tasty Sweets are simply divine. Every bite of the cake was moist and delicious. A real treat!"</p>
-                    <a href="/#order" class="btn">order now</a>
-                </div>
-            </div>
-            <div class="box">
-                <img src="images/p-5.jpg" alt="">
-                <div class="content">
-                    <h3>Cold Drinks</h3>
-                    <p>The Cold Drinks are so refreshing and full of flavor. They were the perfect complement to my meal.</p>
-                    <a href="/#order" class="btn">order now</a>
-                </div>
-            </div>
-            <div class="box">
-                <img src="images/g-8.jpg" alt="">
-                <div class="content">
-                    <h3>Tasty chocolate</h3>
-                    <p>Tasty chocolate from TastyBites are simply delicious! They never fail to satisfy my sweet cravings. Perfect for indulging or sharing with friends</p>
-                    <a href="/#order" class="btn">order now</a>
-                </div>
-            </div>
-            <div class="box">
-                <img src="images/p-6.jpg" alt="">
-                <div class="content">
-                    <h3>tasty Cold Ice Cream</h3>
-                    <p> Cold Ice Cream from TastyBites is a real treat! Creamy, smooth, and oh-so-satisfying. Whether you're cooling off on a hot day or just need a sweet pick-me-up, their ice cream hits the spot every time. Definitely a must-try!</p>
-                    <a href="/#order" class="btn">order now</a>
-                </div>
+                <a href="#" class="btn" onclick="addToCart('tasty ice-creams', 207, 'images/p-6.jpg')">add to cart</a>
             </div>
         </div>
     </section>
@@ -309,7 +227,7 @@
 
             <div class="box">
                 <img src="images/pic1.png" alt="">
-                <h3>Priya Patel</h3>
+                <h3>Indira Gandhi</h3>
                 <div class="stars">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
@@ -317,12 +235,12 @@
                     <i class="fas fa-star"></i>
                     <i class="far fa-star"></i>
                 </div>
-                <p>The Tasty Sweets are simply divine. Every bite of the cake was moist and delicious. A real treat!"</p>
+                <p>I finally found my perfect dessert! CraveCourier's <strong><span></span>Tasty Sweets</span></strong> are divine, and the best part is I could <strong><span></span>customize my cake in the notes</span></strong>. It was so moist and delicious—a real treat, made just for me!"</p>
 
             </div>
             <div class="box">
                 <img src="images/pic2.webp" alt="">
-                <h3>Rahul Gupta</h3>
+                <h3>Shashi Tharoor</h3>
                 <div class="stars">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
@@ -330,12 +248,12 @@
                     <i class="fas fa-star"></i>
                     <i class="far fa-star"></i>
                 </div>
-                <p>TastyBites breakfast is truly satisfying! They always hit the spot for me.</p>
+                <p>My mornings just got better! CraveCourier's <strong><span></span>breakfast delivery</span></strong> is truly satisfying because I can <strong><span></span>customize every dish</span></strong>. It always hits the spot – the best personalized breakfast in Hubballi.</p>
 
             </div>
             <div class="box">
                 <img src="images/pic3.jpg" alt="">
-                <h3>meera pandi</h3>
+                <h3>Mamta Banerjee</h3>
                 <div class="stars">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
@@ -343,7 +261,7 @@
                     <i class="fas fa-star"></i>
                     <i class="far fa-star"></i>
                 </div>
-                <p> It's the ultimate comfort food to start your day with. Highly recommend!</p>
+                <p>Looking for the <strong><span></span>ultimate comfort food breakfast</span></strong>, made just for you? CraveCourier delivers! I love being able to <strong><span></span>customize my order</span></strong>; it always starts my day perfectly. Highly recommend for <strong><span></span>personalized breakfast delivery in Hubballi</span></strong>!!</p>
 
             </div>
         </div>
@@ -354,7 +272,7 @@
         <h1 class="heading"><span>order</span> now </h1>
 
         <div class="row">
-            <form action="mailto:vigneshgbecse@gmail.com">
+            <form action="alhantemporary@gmail.com">
                 <div class="inputBox">
                     <input type="text" placeholder="Name"> <br>
                     <input type="email" placeholder="E-mail">
@@ -363,8 +281,8 @@
                     <input type="number" placeholder="Phone Number"> <br>
                     <input type="text" placeholder="Food Name">
                 </div>
-                <textarea placeholder="Address" name="" id="" cols="30" rows="10"></textarea>
-                <input type="submit" value="order now" class="btn0">
+                <textarea placeholder="Tell us your desired dish, will make it for you" name="" id="" cols="30" rows="10"></textarea>
+                <input type="submit" value="Custom Order" class="btn0">
             </form>
         </div>
     </setion>
@@ -375,9 +293,9 @@
             <div class="footer-content">
                 <h3>Contact Us</h3>
                 <ul>
-                    <li>Email: vigneshgbecse@gmail.com</li>
-                    <li>Phone: +91 8525822546</li>
-                    <li>Address: 132/4, Santhiveerappapuram Street, Punjai Sangenthi, Trichy - 621711, Tamil Nadu</li>
+                    <li>Email: Alhantemporary@gmail.com</li>
+                    <li>Phone: +91 1234567890</li>
+                    <li>Address: keshawpur, Hubli-580020, Karnataka, India</li>
                 </ul>
             </div>
             <div class="footer-content">
@@ -392,12 +310,9 @@
             <div class="footer-content">
                 <h3>Follow Us</h3>
                 <ul class="social-icons">
-                    <li><a href="https://www.instagram.com/vicky_vigneshg/"><i class="fab fa-instagram"></i></a></li>
-                    <li><a href="https://www.linkedin.com/in/vigneshgbe/"><i class="fab fa-linkedin-in"></i></a></li>
-                    <li><a href="https://www.youtube.com/@Graduate-Hands"><i class="fab fa-youtube"></i></a></li>
-                    <li><a href="https://wa.me/+919047606037"><i class="fab fa-whatsapp"></i></a></li>
-                    <li><a href="https://github.com/Sweety-Vigneshg"><i class="fab fa-github"></i></a></li>
-                    <li><a href="https://in.pinterest.com/vigneshgbe/"><i class="fab fa-pinterest"></i></a></li>
+                    <li><a href="https://www.instagram.com/alhaaannnn/"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/alhan-bellary-378418340/"><i class="fab fa-linkedin-in"></i></a></li>
+                    <li><a href="https://github.com/alhaannn"><i class="fab fa-github"></i></a></li>
 
                 </ul>
             </div>
@@ -405,9 +320,60 @@
     
 
         <h1 class="credit">
-            created by <span><a href="https://vigneshgbe.neocities.org">Vignesh G</a></span> | all rights are reserved
+            created by <span><a href="https://github.com/alhaannn">Alhan Bellary</a></span> | all rights are reserved
         </h1>
     </section>
+
+    <!-- Login/Register Modal -->
+    <div class="login-modal" id="login-modal">
+        <div class="login-content">
+            <div class="login-header">
+                <h3 id="modal-title">Login</h3>
+                <button class="close-login" onclick="toggleLoginModal()">&times;</button>
+            </div>
+            <form id="login-form">
+                <div class="form-group">
+                    <input type="email" id="email" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" id="password" placeholder="Password" required>
+                </div>
+                <button type="submit" class="login-submit-btn">Login</button>
+                <p class="switch-form">Don't have an account? <a href="#" onclick="switchToRegister()">Register</a></p>
+            </form>
+            
+            <form id="register-form" style="display: none;">
+                <div class="form-group">
+                    <input type="text" id="reg-name" placeholder="Full Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="reg-email" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" id="reg-password" placeholder="Password" required>
+                </div>
+                <button type="submit" class="login-submit-btn">Register</button>
+                <p class="switch-form">Already have an account? <a href="#" onclick="switchToLogin()">Login</a></p>
+            </form>
+        </div>
+    </div>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-sidebar" id="cart-sidebar">
+        <div class="cart-header">
+            <h3>Your Cart</h3>
+            <button class="close-cart" onclick="toggleCart()">&times;</button>
+        </div>
+        <div class="cart-items" id="cart-items">
+            <!-- Cart items will be dynamically added here -->
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <h4>Total: <span id="cart-total">₹0</span></h4>
+            </div>
+            <button class="checkout-btn" onclick="checkout()">Checkout</button>
+        </div>
+    </div>
 
     <a href="#home" class="fas fa-angle-up" id="scroll-top"></a>
 

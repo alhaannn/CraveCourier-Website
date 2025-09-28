@@ -1,0 +1,24 @@
+<svg width="200" height="80" viewBox="0 0 200 80" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="200" height="80" fill="black"/>
+  
+  <!-- Location pin icon with utensils -->
+  <g transform="translate(100, 20)">
+    <!-- Pin outline -->
+    <path d="M0,-15 L-8,-8 L-8,8 L0,15 L8,8 L8,-8 Z" fill="none" stroke="white" stroke-width="2"/>
+    
+    <!-- Spoon -->
+    <path d="M-6,-6 L-2,2" stroke="white" stroke-width="2" fill="none"/>
+    <circle cx="-4" cy="-4" r="1.5" fill="white"/>
+    
+    <!-- Fork -->
+    <path d="M6,-6 L2,2" stroke="white" stroke-width="2" fill="none"/>
+    <path d="M4,-6 L4,-4 M3.5,-6 L3.5,-4 M4.5,-6 L4.5,-4" stroke="white" stroke-width="1"/>
+  </g>
+  
+  <!-- Company name -->
+  <text x="100" y="50" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="16" font-weight="bold">CraveCourie</text>
+  
+  <!-- Delivery text -->
+  <text x="100" y="65" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="10">DELIVERY</text>
+</svg>
