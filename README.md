@@ -137,6 +137,17 @@ CraveCourie/
 
 This project was created by **Alhan Bellary**. Feel free to fork and modify for your own food delivery needs!
 
+## 🔗 Related Projects by Alhan Bellary
+  - [gary-bot](https://github.com/alhaannn/gary-bot) — Multi-channel gold trading bot
+  - [secure-validator](https://github.com/alhaannn/secure-validator) — Python password security tool
+  - [CraveCourier Website](https://github.com/alhaannn/CraveCourier-Website) — Live food delivery web app
+  - [AutoPilot-Judge](https://github.com/alhaannn/AutoPilot-Judge) — AI vision automation
+  ...
+
+## 📬 Author
+**Alhan Bellary** — Python Developer
+GitHub: [@alhaannn](https://github.com/alhaannn) · Hubballi, Karnataka, India
+
 ## License
 
 All rights reserved. Created with ❤️ for the food delivery community.
